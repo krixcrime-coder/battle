@@ -66,6 +66,17 @@ class LoginActivity : AppCompatActivity() {
         dialog.setContentView(R.layout.dialog_forgot_password)
         dialog.setCancelable(true)
 
+        // BUG FIX: Dialog by default sizes itself to wrap_content width, which was
+        // squeezing the Cancel/Send OTP buttons and truncating their text ("CAN CEL").
+        // Explicitly set the dialog window to match the screen width (with side margins)
+        // so it renders exactly like the reference design.
+        dialog.window?.let { window ->
+            window.setBackgroundDrawableResource(android.R.color.transparent)
+            val displayMetrics = resources.displayMetrics
+            val width = (displayMetrics.widthPixels * 0.9).toInt()
+            window.setLayout(width, android.view.ViewGroup.LayoutParams.WRAP_CONTENT)
+        }
+
         val etIdentifier = dialog.findViewById<EditText>(R.id.etIdentifier)
         val btnCancel = dialog.findViewById<Button>(R.id.btnCancel)
         val btnSendOtp = dialog.findViewById<Button>(R.id.btnSendOtp)
