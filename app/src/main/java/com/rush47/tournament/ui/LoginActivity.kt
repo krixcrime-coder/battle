@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.rush47.tournament.R
 import com.rush47.tournament.api.ApiClient
+import com.rush47.tournament.api.extractApiResponse
 import com.rush47.tournament.databinding.ActivityLoginBinding
 import com.rush47.tournament.models.ApiResponse
 import retrofit2.Call
@@ -43,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
         val body = mapOf("username" to username, "password" to password)
         ApiClient.instance.login(body).enqueue(object : Callback<ApiResponse> {
             override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
-                val result = response.body()
+                val result = extractApiResponse(response)
                 if (result?.success == true) {
                     Toast.makeText(this@LoginActivity, result.message, Toast.LENGTH_SHORT).show()
                     // TODO: token aur user data ko SharedPreferences me save karo yahan se
@@ -81,7 +82,7 @@ class LoginActivity : AppCompatActivity() {
             val body = mapOf("identifier" to identifier)
             ApiClient.instance.forgotPassword(body).enqueue(object : Callback<ApiResponse> {
                 override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
-                    val result = response.body()
+                    val result = extractApiResponse(response)
                     Toast.makeText(this@LoginActivity, result?.message ?: "OTP request failed", Toast.LENGTH_SHORT).show()
                     if (result?.success == true) dialog.dismiss()
                 }
