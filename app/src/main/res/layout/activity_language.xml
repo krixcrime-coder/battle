@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_margin="16dp"
-        android:background="@color/purple_primary"
+        android:background="@drawable/bg_button_continue"
         android:text="@string/continue_btn"
         android:textColor="@color/white"
         android:textStyle="bold" />
