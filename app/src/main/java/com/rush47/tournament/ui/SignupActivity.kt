@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.rush47.tournament.api.ApiClient
+import com.rush47.tournament.api.extractApiResponse
 import com.rush47.tournament.databinding.ActivitySignupBinding
 import com.rush47.tournament.models.ApiResponse
 import retrofit2.Call
@@ -53,7 +54,7 @@ class SignupActivity : AppCompatActivity() {
 
         ApiClient.instance.register(body).enqueue(object : Callback<ApiResponse> {
             override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
-                val result = response.body()
+                val result = extractApiResponse(response)
                 Toast.makeText(this@SignupActivity, result?.message ?: "Signup failed", Toast.LENGTH_SHORT).show()
                 if (result?.success == true) {
                     startActivity(Intent(this@SignupActivity, LoginActivity::class.java))
