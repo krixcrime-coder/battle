@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">RUSH 47</string>
+    <string name="choose_language">भाषा चुनें</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="continue_btn">आगे बढ़ें</string>
+    <string name="welcome_login">आपका स्वागत है,\nलॉगिन</string>
+    <string name="welcome_signup">आपका स्वागत है,\nसाइन अप</string>
+    <string name="username">यूजरनेम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="login">लॉगिन</string>
+    <string name="or_login_with">या इसके साथ लॉगिन करें</string>
+    <string name="no_account">खाता नहीं है? साइन अप करें</string>
+    <string name="first_name">पहला नाम</string>
+    <string name="last_name">अंतिम नाम</string>
+    <string name="mobile">मोबाइल</string>
+    <string name="email">ईमेल</string>
+    <string name="referral_code">रेफरल कोड</string>
+    <string name="agree_terms">रजिस्टर करके, मैं नियम और शर्तों और गोपनीयता नीति से सहमत हूँ</string>
+    <string name="sign_up">साइन अप</string>
+    <string name="reset_password">पासवर्ड रीसेट करें</string>
+    <string name="email_mobile">ईमेल/मोबाइल नंबर</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="send_otp">OTP भेजें</string>
+    <string name="already_have_account">पहले से खाता है? लॉगिन करें</string>
+</resources>
