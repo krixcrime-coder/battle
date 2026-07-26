@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <!-- Header: profile icon + username -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/header_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/battlemanialogo" />
+
+        <TextView
+            android:id="@+id/accountUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/account"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <!-- Each row below is a full-width card; tapping any of them
+                 currently only shows a "coming soon" toast - none of
+                 these open a real screen yet. -->
+
+            <include layout="@layout/item_account_menu_row"
+                android:id="@+id/rowMyProfile" />
+
+            <include layout="@layout/item_account_menu_row"
+                android:id="@+id/rowMyWallet" />
+
+            <include layout="@layout/item_account_menu_row"
+                android:id="@+id/rowMyReferrals" />
+
+            <include layout="@layout/item_account_menu_row"
+                android:id="@+id/rowChangePassword" />
+
+            <include layout="@layout/item_account_menu_row"
+                android:id="@+id/rowCustomerSupport" />
+
+            <include layout="@layout/item_account_menu_row"
+                android:id="@+id/rowAboutUs" />
+
+            <include layout="@layout/item_account_menu_row"
+                android:id="@+id/rowLogout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
