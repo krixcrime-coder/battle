@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Rush47</string>
+
+    <!-- Backend now hosted on the client's own server -->
+    <string name="api">https://battle.royalflood.site/api/</string>
+
+    <string name="welcome_login">Welcome to,\nLogin</string>
+    <string name="username_hint">Username / Mobile</string>
+    <string name="password_hint">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot Password? Reset now</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+    <string name="username_required">Username is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="login_successfully">Login successful</string>
+    <string name="show_hide_password">Show or hide password</string>
+
+    <string name="register_title">Create Account</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="username_hint_register">Username</string>
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="email_hint">Email</string>
+    <string name="refer_code_hint">Refer Code (optional)</string>
+    <string name="signup">SIGN UP</string>
+    <string name="registration_successfully">Registration successful</string>
+    <string name="already_have_account">Already have an account? Login</string>
+
+    <string name="passwords_not_match">Passwords do not match</string>
+
+    <string-array name="country_codes">
+        <item>IN +91</item>
+    </string-array>
+
+    <string name="reset_password_title">Reset Password</string>
+    <string name="email_or_mobile_hint">Enter Email or Mobile No.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="verify_otp_title">Verify OTP</string>
+    <string name="otp_note">Enter the verification code we just sent you via SMS/Email.</string>
+    <string name="wrong_otp">Incorrect OTP!</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="confirm_new_password_hint">Confirm New Password</string>
+    <string name="submit">Submit</string>
+    <string name="password_reset_successfully">Password reset successful. Please login.</string>
+
+    <string name="home_welcome">Welcome back!</string>
+    <string name="logout">Logout</string>
+
+    <!-- Play tab (dashboard) -->
+    <string name="welcome_back_comma">Welcome Back,</string>
+    <string name="no_game_found">No Game Found.</string>
+    <string name="match_available_">Matches available:</string>
+    <string name="my_matches">My Matches</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="completed">Completed</string>
+    <string name="esports_games">Esports Games</string>
+    <string name="tab_tournament">Tournament</string>
+    <string name="tab_solo">Solo</string>
+
+    <!-- Bottom navigation (exactly 3 tabs: Earn/Play already existed above for
+         the old 6-tab bar, only Account is new) -->
+    <string name="tab_account">Account</string>
+    <string name="tab_play">Play</string>
+    <string name="tab_result">Result</string>
+    <string name="tab_earn">Earn</string>
+    <string name="tab_me">Me</string>
+
+    <!-- Earn tab -->
+    <string name="earn">Earn</string>
+    <string name="refer_and_earn">Refer &amp; Earn</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="my_referrals">My Referrals</string>
+    <string name="watch_and_earn">Watch &amp; Earn</string>
+    <string name="refer_more_to_earn_more">REFER MORE TO EARN MORE</string>
+    <string name="refer_detail">Share your referral code with friends. When they sign up using your code, they instantly get a welcome bonus in their wallet.</string>
+    <string name="your_referral_code">YOUR REFERRAL CODE</string>
+    <string name="refer_now">REFER NOW</string>
+    <string name="copied_to_clipboard">Referral code copied</string>
+    <string name="total_referrals">Total Referrals</string>
+    <string name="no_referrals_yet">No referrals yet. Share your code to start earning!</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="deposited">Deposited</string>
+    <string name="winning">Winning</string>
+    <string name="bonus">Bonus</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="coming_soon">Coming soon</string>
+
+    <!-- Account tab -->
+    <string name="account">Account</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="about_us">About Us</string>
+
+    <string name="profile_full_name">Full Name</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_mobile">Mobile</string>
+
+    <string name="version_prefix">Version</string>
+    <string name="about_us_body">Rush47 is an esports tournament and gaming platform where you can join tournaments, track your matches, and win rewards. Play fair, have fun, and climb the leaderboard!</string>
+
+    <!-- TODO: replace with your real support contact before release -->
+    <string name="support_email">support@rush47.app</string>
+</resources>
